@@ -14,6 +14,10 @@ type sysfs_bluetooth, sysfs_type, fs_type;
 type sysfs_pcc_profile, sysfs_type, fs_type;
 type sysfs_timekeep, sysfs_type, fs_type;
 
+# TEMPORARY: Already defined in Pie!
+type sysfs_rtc, sysfs_type, fs_type;
+type sysfs_net, sysfs_type, fs_type;
+
 type debugfs_clk, debugfs_type, fs_type;
 type debugfs_ion, debugfs_type, fs_type;
 type debugfs_ipc, debugfs_type, fs_type;
@@ -67,7 +71,7 @@ type keylayout_file, file_type, vendor_file_type;
 typeattribute sysfs_batteryinfo mlstrustedobject;
 
 # msm_irqbalance
-type proc_irq, proc_type, fs_type;
+type proc_irq, fs_type; # TEMPORARY: proc_type in Pie!
 type sysfs_irq, sysfs_type, fs_type;
 type irqbalance_socket, file_type;
 

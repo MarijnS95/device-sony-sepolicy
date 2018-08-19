@@ -8,7 +8,12 @@ allow init { firmware_file bt_firmware_file persist_file qdsp_file }:dir mounton
 dontaudit init kernel:system module_request;
 
 # Ignore all accidental O_CREAT open() calls on unsupported filesystems:
-dontaudit init { sysfs_type proc_type }:file create;
+dontaudit init { sysfs_type proc_irq }:file create;
+
+# TEMPORARY: These make no sense and are neverallowed by the Pie sepolicy.
+dontaudit init cgroup:file create;
+dontaudit domain sysfs_type:dir { add_name create link remove_name rename reparent rmdir write };
+dontaudit init proc_irq:dir write;
 
 # Allow the init process to read and write default_smp_affinity:
 allow init proc_irq:file rw_file_perms;

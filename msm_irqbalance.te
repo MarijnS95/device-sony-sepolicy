@@ -8,6 +8,9 @@ allow msm_irqbalance self:capability { setgid setuid };
 # Allow to read and write files in /sys/devices/system/cpu/:
 allow msm_irqbalance sysfs_devices_system_cpu:file rw_file_perms;
 
+# TEMPORARY: This is a neverallow and dontaudit in Pie, because such action makes no sense on /proc (and is usually erroneously enabled):
+dontaudit msm_irqbalance proc_irq:dir write;
+
 # Allow msm_irqbalance to search irq and set SMP affinity:
 r_dir_rw_file(msm_irqbalance, proc_irq)
 
