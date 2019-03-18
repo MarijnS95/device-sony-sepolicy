@@ -11,6 +11,11 @@ binder_call(per_mgr, per_proxy)
 binder_call(per_mgr, rild)
 binder_call(per_mgr, wcnss_service)
 
+allow per_mgr_client per_mgr_service:service_manager find;
+neverallow { domain -per_mgr -per_mgr_client } per_mgr_service:service_manager find;
+# Besides just finding the service, clients will "usually" want to call something on it:
+binder_call(per_mgr_client, per_mgr)
+
 add_service(per_mgr, per_mgr_service)
 
 set_prop(per_mgr, vendor_peripheral_prop)

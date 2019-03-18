@@ -6,9 +6,7 @@ init_daemon_domain(per_proxy)
 
 vndbinder_use(per_proxy)
 
-binder_call(per_proxy, per_mgr)
-
-allow per_proxy per_mgr_service:service_manager find;
+typeattribute per_proxy per_mgr_client;
 
 r_dir_file(per_proxy, sysfs_msm_subsys)
 r_dir_file(per_proxy, sysfs_esoc)

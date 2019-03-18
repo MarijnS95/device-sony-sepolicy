@@ -4,6 +4,7 @@ allow hal_camera_default qdisplay_service:service_manager find;
 allow hal_camera_default self:socket { create ioctl read write };
 allowxperm hal_camera self:socket ioctl { IPC_ROUTER_IOCTL_LOOKUP_SERVER IPC_ROUTER_IOCTL_BIND_CONTROL_PORT };
 
+# HW services that are not using domains through hal_attribute:
 allow hal_camera_default {
      fwk_display_hwservice
      hal_graphics_mapper_hwservice

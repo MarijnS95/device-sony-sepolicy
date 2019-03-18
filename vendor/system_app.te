@@ -12,7 +12,7 @@ set_prop(system_app, dispcal_prop)
 set_prop(system_app, timekeep_prop)
 
 # For android setttings
-binder_call(system_app, per_mgr)
+# typeattribute system_app per_mgr_client; # TODO
 binder_call(system_app, wificond)
 binder_call(system_app, update_engine)
 
