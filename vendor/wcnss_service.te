@@ -7,9 +7,7 @@ net_domain(wcnss_service)
 
 vndbinder_use(wcnss_service)
 
-binder_call(wcnss_service, per_mgr)
-
-allow wcnss_service per_mgr_service:service_manager find;
+typeattribute wcnss_service per_mgr_client;
 
 allow wcnss_service self:capability {
     net_admin
