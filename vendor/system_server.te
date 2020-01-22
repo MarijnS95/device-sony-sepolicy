@@ -7,6 +7,8 @@ allow system_server wlan_device:chr_file rw_file_perms;
 r_dir_file(system_server, vendor_idc_file)
 r_dir_file(system_server, vendor_keylayout_file)
 
+# r_dir_file(system_server, sysfs_msm_subsys)
+
 # Allow system_server to write to /proc/<pid>/timerslack_ns
 allow system_server appdomain:file w_file_perms;
 allow system_server audioserver:file w_file_perms;
