@@ -15,3 +15,4 @@ allow hal_tetheroffload_default system_server:netlink_netfilter_socket { getattr
 # Allow creating and modifying the PID file
 allow hal_tetheroffload_default ipa_vendor_data_file:dir create_dir_perms;
 allow hal_tetheroffload_default ipa_vendor_data_file:file create_file_perms;
+allow hal_tetheroffload_default ipa_dev:chr_file rw_file_perms;
