@@ -7,6 +7,8 @@ rw_diag_device(netutils_wrapper)
 
 allow netutils_wrapper sysfs_soc:file read;
 
+# TODO: avc: denied { read write } for comm="ip6tables-wrapp" path="socket:[26154]" dev="sockfs" ino=26154 scontext=u:r:netutils_wrapper:s0 tcontext=u:r:netmgrd:s0 tclass=qipcrtr_socket permissive=0
+
 dontaudit netutils_wrapper netmgrd:socket { read write };
 dontaudit netutils_wrapper netmgrd:unix_stream_socket { read write };
 dontaudit netutils_wrapper netmgrd:netlink_socket { getattr read write append };
