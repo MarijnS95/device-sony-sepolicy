@@ -12,6 +12,7 @@ allow qcrilam_app app_api_service:service_manager find;
 
 # Find media.audio_flinger
 allow qcrilam_app audioserver_service:service_manager find;
+# allow qcrilam_app audio_service:service_manager find;
 # Find isub
 allow qcrilam_app radio_service:service_manager find;
 
