@@ -9,3 +9,14 @@ user=system seinfo=platform name=com.sony.qcrilam domain=qcrilam_app type=app_da
 # ContextImpl: Failed to update user.inode_cache: stat failed: EACCES (Permission denied)
 # ContextImpl: Failed to ensure /data/user_de/0/com.sony.qcrilam/code_cache: mkdir failed: EACCES (Permission denied)
 # ContextImpl: Failed to update user.inode_code_cache: stat failed: EACCES (Permission denied)
+
+user=system seinfo=platform name=org.codeaurora.ims domain=platform_app type=system_app_data_file
+user=system seinfo=platform name=com.qualcomm.embms domain=platform_app type=system_app_data_file
+user=system seinfo=platform name=com.qti.qualcomm.datastatusnotification domain=platform_app type=system_app_data_file
+user=system seinfo=platform name=com.qti.dpmserviceapp domain=platform_app type=system_app_data_file
+user=system seinfo=platform name=com.qualcomm.qcrilmsgtunnel domain=platform_app type=system_app_data_file
+user=system seinfo=platform name=com.qualcomm.qti.uceShimService domain=platform_app type=system_app_data_file
+user=system seinfo=platform name=com.qualcomm.qti.uimGbaApp domain=platform_app type=system_app_data_file
+user=system seinfo=platform name=com.qualcomm.qti.lpa domain=platform_app type=system_app_data_file
+user=system seinfo=platform name=com.qualcomm.uimremoteclient domain=platform_app type=system_app_data_file
+user=system seinfo=platform name=com.qualcomm.uimremoteserver domain=platform_app type=system_app_data_file
