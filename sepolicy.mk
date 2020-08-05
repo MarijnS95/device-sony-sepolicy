@@ -2,6 +2,8 @@
 # SELinux policy variable definitions
 LOCAL_SEPOLICY := device/sony/sepolicy
 
+# PRODUCT_PACKAGES += sepolicy_board_platform
+
 BOARD_VENDOR_SEPOLICY_DIRS += \
     $(LOCAL_SEPOLICY)/vendor
 
