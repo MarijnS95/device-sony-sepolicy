@@ -6,9 +6,10 @@ init_daemon_domain(per_mgr);
 
 vndbinder_use(per_mgr)
 
+hal_client_domain(per_mgr, hal_telephony)
+
 binder_call(per_mgr, hal_gnss)
 binder_call(per_mgr, per_proxy)
-binder_call(per_mgr, rild)
 binder_call(per_mgr, wcnss_service)
 
 add_service(per_mgr, per_mgr_service)
