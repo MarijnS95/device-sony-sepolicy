@@ -31,6 +31,7 @@
 /dev/sensors                                    u:object_r:sensors_device:s0
 /dev/pn5[0-9x]+                                 u:object_r:nfc_device:s0
 /dev/smem_log                                   u:object_r:smem_log_device:s0
+/dev/spss_utils                                 u:object_r:spss_utils_device:s0
 /dev/fingerprint                                u:object_r:fingerprint_device:s0
 /dev/dri/card0                                  u:object_r:graphics_device:s0
 /dev/wlan                                       u:object_r:wlan_device:s0

@@ -20,6 +20,7 @@ type adsprpcd_block_device, dev_type;
 type rpmb_block_device, dev_type;
 type sd_block_device, dev_type;
 type smem_log_device, dev_type;
+type spss_utils_device, dev_type;
 type ta_block_device, dev_type;
 type fingerprint_device, dev_type;
 type ab_block_device, dev_type;
