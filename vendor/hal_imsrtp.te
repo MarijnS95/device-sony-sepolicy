@@ -8,6 +8,7 @@ net_domain(hal_imsrtp)
 
 hwbinder_use(hal_imsrtp)
 get_prop(hal_imsrtp, hwservicemanager_prop)
+# TODO: hal_ims hwservice_attribute?
 add_hwservice(hal_imsrtp, hal_imsrtp_hwservice)
 
 unix_socket_connect(hal_imsrtp, ims, ims)

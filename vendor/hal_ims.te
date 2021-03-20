@@ -1,0 +1,8 @@
+hal_attribute_hwservice(hal_ims, vnd_ims_radio_hwservice)
+hal_attribute_hwservice(hal_ims, vnd_qti_ims_callinfo_hwservice)
+hal_attribute_hwservice(hal_ims, vnd_qti_ims_factory_hwservice)
+hal_attribute_hwservice(hal_ims, vnd_qti_imscms_hwservice)
+hal_attribute_hwservice(hal_ims, vnd_qti_uce_hwservice)
+
+# TODO: Assuming hal_imsrtp is a _server_ domain for hal_ims
+# hal_attribute_hwservice(hal_ims, hal_imsrtp_hwservice)
