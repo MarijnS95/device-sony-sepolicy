@@ -7,6 +7,8 @@ set_prop(tee, vendor_tee_listener_prop)
 set_prop(tee, keymaster_prop)
 set_prop(tee, vendor_keymaster_prop)
 
+wakelock_use(tee)
+
 allow tee vendor_firmware_file:dir search;
 allow tee vendor_firmware_file:file r_file_perms;
 allow tee block_device:dir { getattr search };
